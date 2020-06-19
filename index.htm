@@ -41,6 +41,33 @@
   background: #ddd;
   color: black;
 }
+      .coloumnHalf {
+        width: 33.33%;
+      }
+			ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255, 0);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	border-radius: 3px 3px;
+}
+
+li a:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+}
     </style>
   </head>
   <body>
@@ -48,15 +75,26 @@
 <video autoplay muted loop id="myVideo">
   <source src="https://cdn.discordapp.com/attachments/570629358491009026/722388622283767838/YOGVENTURES.mp4" type="video/mp4">
 </video>
-
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 <div class="content">
-  <div class="main">
+  <div class="coloumnHalf">
+    <h1 style="color: white;">Join the Discord Server</h1>
+  </div>
+  <div class="coloumnHalf">
     <h1 style="color:white">Welcome</h1>
     <p class="description">This is where the new unofficial Yogventures devlopment team upload and keep all of the downloads</p>
     <a class="button installation" href="https://github.com/yogventures/" target="_blank">Base Game</a><br>
     <a class="button development" href="https://github.com/yogventures/yogventures-mod" target="_blank">Multiplayer Mod</a><br>
     <a class="button about" href="https://github.com/yogventures/yogventures-mod/graphs/contributors" target="_blank">Authors</a>
     <center><a class="button" href="yogventures.winterfrost.network" style="color:white">Wanna get to the main site</a></center>
+  </div>
+  <div class="coloumnHalf">
+    <h1 style="color:white>Reddit</h1>
   </div>
 </div>
   </body>
