@@ -68,6 +68,19 @@ li a {
 li a:hover {
   background-color: rgb(255, 255, 255, 0.1);
 }
+	    /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
   </head>
   <body>
@@ -82,10 +95,11 @@ li a:hover {
   <li><a href="#about">About</a></li>
 </ul></center>
 <div class="content">
-  <div class="coloumnHalf">
+<div class="row">
+  <div class="column">
     <h1 style="color: white;">Join the Discord Server</h1>
   </div>
-  <div class="coloumnHalf">
+  <div class="column">
     <center><h1 style="color:white">Welcome</h1>
     <p class="description">This is where the new unofficial Yogventures devlopment team upload and keep all of the downloads</p>
     <a class="button installation" href="https://github.com/yogventures/" target="_blank">Base Game</a><br>
@@ -93,9 +107,10 @@ li a:hover {
     <a class="button about" href="https://github.com/yogventures/yogventures-mod/graphs/contributors" target="_blank">Authors</a></center>
     <center><a class="button" href="yogventures.winterfrost.network" style="color:white">Wanna get to the main site</a></center>
   </div>
-  <div class="coloumnHalf">
+  <div class="column">
     <h1 style="color:white>Reddit</h1>
   </div>
+	       </div>
 </div>
   </body>
 </html>
